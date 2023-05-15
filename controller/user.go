@@ -1,5 +1,5 @@
 package controller
 
-import (
-	"C:\\Users\\evilr\\GolandProjects\\go-web-project\\controller"
-)
+type UserController struct {
+	userRepository *UserRpository
+}
