@@ -1,5 +1,9 @@
 package controller
 
 type UserController struct {
-	userRepository *UserRpository
+	userRepository UserRpository
+}
+
+func NewUserController(r UserRepository) *UserController {
+	return &UserController{r}
 }
